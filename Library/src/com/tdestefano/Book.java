@@ -52,6 +52,7 @@ public class Book {
 		StringBuilder builder = new StringBuilder();
 		
 		builder.append("\"" + this.title + "\"");
+		builder.append(" (" + String.format("%tB %te, %tY", publishDate, publishDate, publishDate) + ")");
 		
 		if (isCheckedOut()) {
 			builder.append(" was");

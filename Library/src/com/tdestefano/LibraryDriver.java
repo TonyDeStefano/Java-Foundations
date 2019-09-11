@@ -15,21 +15,24 @@ public class LibraryDriver {
 	 */
 	public static void main(String[] args) {
 		
-		// Define a calendar object:
-		Calendar calendar = Calendar.getInstance();
+		// Define calendar objects:
+		Calendar calendar1 = Calendar.getInstance();
+		Calendar calendar2 = Calendar.getInstance();
+		Calendar calendar3 = Calendar.getInstance();
+		Calendar calendar4 = Calendar.getInstance();
 		
 		// Define some books:
-		calendar.set(1990, 0, 1);
-		Book bookIt = new Book("It", "Stephen King", calendar, "Castle Rock Inc");
+		calendar1.set(1990, 0, 1);
+		Book bookIt = new Book("It", "Stephen King", calendar1, "Castle Rock Inc");
 		
-		calendar.set(2000, 4, 20);
-		Book bookHarryPotter = new Book("Harry Potter", "JK Rowling", calendar, "Magical Books United");
+		calendar2.set(2000, 4, 20);
+		Book bookHarryPotter = new Book("Harry Potter", "JK Rowling", calendar2, "Magical Books United");
 		
-		calendar.set(1950, 5, 2);
-		Book bookLordOfTheRings = new Book("Lord of the Rings", "JRR Tolkien", calendar, "Middle Earth Co.");
+		calendar3.set(1950, 5, 2);
+		Book bookLordOfTheRings = new Book("Lord of the Rings", "JRR Tolkien", calendar3, "Middle Earth Co.");
 		
-		calendar.set(1922, 1, 22);
-		Book bookCatInTheHat = new Book("Cat in the Hat", "Dr. Seuss", calendar, "Green Ham Books");
+		calendar4.set(1922, 1, 22);
+		Book bookCatInTheHat = new Book("Cat in the Hat", "Dr. Seuss", calendar4, "Green Ham Books");
 		
 		// Define some members:
 		Member john = new Member("John", "Lennon");
